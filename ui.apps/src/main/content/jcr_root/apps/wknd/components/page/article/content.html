@@ -1,0 +1,17 @@
+<sly data-sly-use.info="com.adobe.aem.guides.wknd.core.pojo.Valores"/>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/> 
+ <sly data-sly-call="${clientLib.css @ categories='wknd.base'}" /> 
+
+<div clas="header">
+<sly data-sly-resource="${info.Rutaheader @ wcmmode='disabled'}"></sly>
+</div>
+
+	
+
+<div>
+<main id="main" data-sly-include="content-main.html"></main>
+</div>
+
+<div clas="footer">
+<sly data-sly-resource="${info.getRuta @ wcmmode='disabled'}"></sly>
+</div>

@@ -1,0 +1,18 @@
+<!-- Start Align Area -->
+			<div class="whole-wrap" style="background-color:${properties.backgroundColor2 @ context='styleString'}">
+				<div class="container">
+					<div class="section-top-border">
+						<h3 class="mb-30">${properties.title}</h3>
+						<div class="row">
+							<div class="col-md-3">
+								<sly data-sly-resource="${'articlecontent' @ resourceType='/apps/wknd/components/content/image'}"></sly>
+								<img src="/etc/designs/wknd/clientlibs/img/elements/d.jpg" alt="" class="img-fluid">
+								</div>
+							<div class="col-md-9 mt-sm-20">
+								<p>${properties.description}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Align Area -->

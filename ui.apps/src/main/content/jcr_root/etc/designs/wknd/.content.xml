@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2018-08-07T11:28:42.678+01:00"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="wcm/core/components/designer">
+        <home jcr:primaryType="nt:unstructured">
+        <parsys jcr:primaryType="nt:unstructured" components="group:General" components="group:WKND.Content" jcr:lastModifiedBy="admin" sling:resourceType="wcm/foundation/components/parsys">
+        <section jcr:primaryType="nt:unstructured"/></parsys>
+        </home>
+    </jcr:content>
+    <clientlibs/>
+</jcr:root>
+
+

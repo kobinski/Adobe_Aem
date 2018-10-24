@@ -1,0 +1,53 @@
+
+<!-- Start Align Area -->
+			<div class="articulos-servelet">
+				<div class="container-articulos-servelet">
+					<p style="text-align:center;" id="resp">hola:</p>
+								<p style="text-align:center;" id="demo"></p>
+							<p style="text-align:center;" id="demo2"></p>
+								
+							<p style="text-align:center;" id="demo"></p>
+							<p style="text-align:center;" id="demo2"></p>
+				</div>
+			</div>
+			<!-- End Align Area -->
+			
+<script>
+
+			
+				var resourcePath = "${currentPage.path @ context='scriptString'}";
+	
+				
+				$.ajax({
+						type: 'GET',
+						url :resourcePath + ".miservlet2.html",
+							dataType: "json",
+					    
+				         contentType: false, //need it to be a multipart form
+					  	     processData: false, //need it to be a multipart form
+					     async   : false,
+					     cache   : false,
+
+				     success: function (resp) {
+				    	 
+				    	 
+				    	 for (var i in resp){
+				    		 
+				    		 if(i==="titulo"){
+				    			document.getElementById("demo").innerHTML=resp[i];
+				    			
+					    	  }
+			                 else if(i==="descripcion"){                         
+			                	document.getElementById("demo2").innerHTML=resp[i];
+			                	
+					    	  }
+				    	  }			    	 
+
+				     }	
+
+				});
+				
+			
+	 
+	 	
+	  </script>

@@ -1,0 +1,20 @@
+<sly data-sly-use.info="com.adobe.aem.guides.wknd.core.pojo.Valores"/>
+<sly data-sly-use.infoherencia="com.adobe.aem.guides.wknd.core.pojo.Herencia"/>
+<sly data-sly-use.cover="com.adobe.aem.guides.wknd.core.models.ModelsArticle"/>
+
+
+
+  <div clas="hero">
+<sly data-sly-resource="${'hero' @ resourceType='/apps/wknd/components/content/hero'}"></sly>
+</div> 
+
+<div clas="threecolumnband">
+<sly data-sly-resource="${'main-threecolumnband' @ resourceType='/apps/wknd/components/content/threecolumnband'}"></sly>
+</div>
+
+<div clas="articlesinline">
+<sly data-sly-resource="${'main-articlesinline' @ resourceType='/apps/wknd/components/content/articlesinline'}"></sly>
+</div>
+<div clas="textlist">
+<sly data-sly-resource="${'texline' @ resourceType='/apps/wknd/components/content/text_list'}"></sly>
+</div>

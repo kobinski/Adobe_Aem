@@ -1,0 +1,15 @@
+<sly data-sly-use.info="com.adobe.aem.guides.wknd.core.pojo.TextListWcm" />
+
+
+<div>
+	<h1>${info.saludo}</h1>
+</div>
+
+
+<div>
+<ul data-sly-list.multifield="${info.ListChildItems}">
+<li>name: ${multifield.name}</li>
+<li>text: ${multifield.text}</li>
+<li>path: ${multifield.path}</li>
+</ul>
+</div>

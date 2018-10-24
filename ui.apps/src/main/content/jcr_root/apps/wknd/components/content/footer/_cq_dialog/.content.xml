@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+jcr:primaryType="nt:unstructured"
+jcr:title="User Menu"
+sling:resourceType="cq/gui/components/authoring/dialog">
+		<content
+		jcr:primaryType="nt:unstructured"
+		sling:resourceType="granite/ui/components/foundation/container">
+				<layout
+				jcr:primaryType="nt:unstructured"
+				sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+				type="nav"/>
+				
+						<items jcr:primaryType="nt:unstructured">
+								<title-principal
+		                        jcr:primaryType="nt:unstructured"
+		                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                        fieldLabel="Introduce the title principal "
+		                        name="./text"/>
+											<nav
+										    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+										    fieldDescription="Click '+' to add a new link"
+										    fieldLabel="add new descriptions"
+										    jcr:primaryType="nt:unstructured"
+												composite="{Boolean}true">
+												    <field sling:resourceType="granite/ui/components/coral/foundation/container"
+												            jcr:primaryType="nt:unstructured" name="./items">
+			        												<items jcr:primaryType="nt:unstructured">
+															            <new-descriptions
+															                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+															                fieldLabel="new descriptions"
+															                jcr:primaryType="nt:unstructured"
+															                name="./text" />
+			           											</items>
+			    									</field>
+												</nav>
+														<title-center
+							                        jcr:primaryType="nt:unstructured"
+							                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+							                        fieldLabel="Introduce the title center "
+							                        name="./textcenter"/>
+		                        <description-center
+							                        jcr:primaryType="nt:unstructured"
+							                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+							                        fieldLabel="Introduce the description center "
+							                        name="./descriptioncenter"/>
+					</items>
+		</content>
+</jcr:root>

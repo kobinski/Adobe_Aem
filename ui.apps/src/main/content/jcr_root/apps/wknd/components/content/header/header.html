@@ -1,0 +1,38 @@
+<sly data-sly-use.info="com.adobe.aem.guides.wknd.core.pojo.Herencia"></sly>
+
+<div id="undefined-sticky-wrapper" class="stiky-wrapper" style= "height:110px;">
+<header class="default-header">
+				<div class="menutop-wrap">
+					<div class="menu-top container">
+						<div class="d-flex justify-content-between align-items-center">
+							<ul class="list">
+								<li><a>Phone: ${properties.phone}</a></li>
+								<li><a>Email: ${properties.text}</a></li>								
+							</ul>
+							<ul class="list">
+								<li><a>${properties.title}</a></li>
+							</ul>
+						</div>
+					</div>					
+				</div>				
+				<nav class="navbar navbar-expand-lg  navbar-light">
+					<div class="container">
+						  <a class="navbar-brand" href="index.html">
+						  	<img src="img/logo.png" alt="">
+						  </a>
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon"></span>
+						  </button>
+
+						  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+						    <ul class="navbar-nav" >
+								<li><a href="${info.buttonLinkHome || '#'}">Home    </a></li>
+							    <li>
+							        <a href="${info.buttonLinkArticle || '#'}">Article</a>
+							    </li>									
+						    </ul>
+						  </div>						
+					</div>
+				</nav>
+			</header>
+</div>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title"
+                        name="./title"/>
+                     
+                     <description
+    											jcr:primaryType="nt:unstructured"
+    											sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+    											fieldLabel="description"
+                        	name="./description"/>
+                    
+                        	
+                        	<backgroundColor 
+                        							jcr:primaryType="nt:unstructured"
+																	    sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+																	    showDefaultColors="{Boolean}false"
+																	    text="Background Color"
+																	    fieldLabel="Background Color"
+																	    name="./backgroundColor2"
+																	    showProperties="{Boolean}false">
+																	  	<items jcr:primaryType="nt:unstructured">
+																				    <white jcr:primaryType="nt:unstructured"  value="#FFFFFF" />
+																				    <black jcr:primaryType="nt:unstructured" value="#000000"/>
+																				    <hugo-blue jcr:primaryType="nt:unstructured" value="#D8F1FF"/>
+																				    <hugo-brown jcr:primaryType="nt:unstructured" value="#451A0C"/>
+																				    <hugo-cream jcr:primaryType="nt:unstructured" value="#F6F6EC"/>
+																				    <hugo-green jcr:primaryType="nt:unstructured" value="#AECDC7"/>
+																				    <hugo-gray jcr:primaryType="nt:unstructured" value="#3C3C3C"/>
+																	  	</items>
+													</backgroundColor>
+                        	
+                </items>
+                
+                
+    					
+    					
+            </column>
+        </items>
+    </content>
+</jcr:root>
+

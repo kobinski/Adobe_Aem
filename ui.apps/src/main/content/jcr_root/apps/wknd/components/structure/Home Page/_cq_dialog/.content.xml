@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:primaryType="nt:unstructured">
+    <content jcr:primaryType="nt:unstructured">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured">
+                <layout jcr:primaryType="nt:unstructured"/>
+                <items jcr:primaryType="nt:unstructured">
+                
+                    <social jcr:primaryType="nt:unstructured" cq:showOnCreate="{Boolean}false" jcr:title="Social" sling:resourceType="granite/ui/components/foundation/section">
+                    	<layout jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" margin="{Boolean}false"/>
+                          <items jcr:primaryType="nt:unstructured">
+											        <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+											            <items jcr:primaryType="nt:unstructured">
+											            
+											            	<social-image jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+											                <items jcr:primaryType="nt:unstructured">
+											                	<file jcr:primaryType="nt:unstructured" sling:resourceType="example1/widgets/context-pathbrowser" name="./social-image/fileReference" fieldLabel="Image" regexpPath="/content/([^/]+)(.*)" matchRootPath="/content/dam/$1" />
+												                <resType jcr:primaryType="nt:unstructured" 
+												                				 sling:resourceType="granite/ui/components/foundation/form/hidden"
+											                           name="./social-image/sling:resourceType" 
+											                           value="foundation/components/image"/>
+											               	</items>
+											               </social-image>
+											               <og jcr:primaryType="nt:unstructured" jcr:title="OG meta" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+											                 	<items jcr:primaryType="nt:unstructured">
+											                 		<type jcr:primaryType="nt:unstructured"
+							                                	sling:resourceType="granite/ui/components/foundation/form/select"
+							                                	fieldLabel="Type"
+							                                	emptyText="Article"
+							                                	name="./ogType">
+							                                <items jcr:primaryType="nt:unstructured">
+							                                    <article jcr:primaryType="nt:unstructured" text="Article" value="article"/>
+							                                    <business jcr:primaryType="nt:unstructured" text="Business" value="business.business"/>
+							                                    <place jcr:primaryType="nt:unstructured" text="Place" value="place"/>
+							                                    <product jcr:primaryType="nt:unstructured" text="Product" value="product"/>
+							                                    <productgroup jcr:primaryType="nt:unstructured" text="Product group" value="product.group"/>
+							                                    <productitem jcr:primaryType="nt:unstructured" text="Product item" value="product.item"/>
+							                                </items>
+							                            </type>
+												                  <title jcr:primaryType="nt:unstructured"
+												                  			 sling:resourceType="granite/ui/components/foundation/form/textfield"
+												                  			 cq-msm-lockable="ogTitle" 
+												                  			 fieldLabel="Title"
+												                  			 name="./ogTitle"
+												                  			 renderReadOnly="{Boolean}true"/>
+												                  <description jcr:primaryType="nt:unstructured"
+												                  						 sling:resourceType="granite/ui/components/foundation/form/textarea"
+												                  						 cq-msm-lockable="ogDescription"
+												                  						 fieldLabel="Description"
+												                  						 name="./ogDescription"
+												                  						 renderReadOnly="{Boolean}true"/>
+											                 	</items>
+											               </og>
+											               <twitter jcr:primaryType="nt:unstructured" jcr:title="Twitter" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+											                 	<items jcr:primaryType="nt:unstructured">
+												                  <twitter-card jcr:primaryType="nt:unstructured"
+												                  							sling:resourceType="granite/ui/components/foundation/form/textfield"
+												                  							cq-msm-lockable="twitterCard"
+												                  							fieldLabel="Card"
+												                  							name="./twitterCard"
+												                  							emptyText="summary_large_image"
+												                  							renderReadOnly="{Boolean}true"/>
+												                  <twitter-title jcr:primaryType="nt:unstructured"
+												                  							 sling:resourceType="granite/ui/components/foundation/form/textfield"
+												                  							 cq-msm-lockable="twitterTitle"
+												                  							 fieldLabel="Title"
+												                  							 name="./twitterTitle"
+												                  							 renderReadOnly="{Boolean}true"/>
+												                  <twitter-desc jcr:primaryType="nt:unstructured"
+												                     						sling:resourceType="granite/ui/components/foundation/form/textarea"
+												                     						cq-msm-lockable="twitterDescription"
+												                     						fieldLabel="Description"
+												                     						name="./twitterDescription"
+												                     						renderReadOnly="{Boolean}true"/>
+											                 	</items>
+											               </twitter>>
+											            </items>
+											        </column>
+											    </items>
+										</social>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
